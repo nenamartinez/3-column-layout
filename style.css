@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  background-color: hsl(0, 0%, 95%);
+  line-height: 1.7;
+  font-weight: 400;
+  color: #fff;
+}
+
+.card-deck {
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  width: 90%;
+  margin: 10rem auto 0;
+}
+
+.card {
+  padding: 4rem;
+}
+
+.card-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-blue {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-green {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.icon {
+  margin-bottom: 2.2rem;
+}
+
+.heading-primary {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin-bottom: 2.2rem;
+}
+
+.paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  background-color: #fff;
+  border-radius: 10000px;
+  border: 2px #fff solid;
+}
+
+.btn a:link,
+.btn a:visited {
+  text-decoration: none;
+}
+
+.btn-orange a:link,
+.btn-orange a:visited {
+  color: hsl(31, 77%, 52%);
+}
+.btn-blue a:link,
+.btn-blue a:visited {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-green a:link,
+.btn-green a:visited {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn a:hover,
+.btn a:active {
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: transparent;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 500px) {
+  .card-deck {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .card-deck {
+    max-width: 100rem;
+    display: flex;
+  }
+}

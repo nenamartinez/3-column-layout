@@ -67,6 +67,12 @@ body {
   border: 2px #fff solid;
 }
 
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
 .btn a:link,
 .btn a:visited {
   text-decoration: none;
@@ -85,22 +91,25 @@ body {
 .btn-green a:visited {
   color: hsl(179, 100%, 13%);
 }
-
-.btn a:hover,
-.btn a:active {
+.btn-orange a:hover,
+.btn-orange a:active {
   color: #fff;
-  cursor: pointer;
+}
+.btn-blue a:hover,
+.btn-blue a:active {
+  color: #fff;
 }
 
-.btn:hover,
-.btn:active {
-  background-color: transparent;
+.btn-green a:hover,
+.btn-green a:active {
+  color: #fff;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
